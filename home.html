@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Onkar Bevinakatti | Personal Homepage</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Montserrat", sans-serif;
+        background: linear-gradient(to right, #e0f7fa, #ffffff);
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #333;
+      }
+
+      .container {
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(6px);
+        padding: 50px 40px;
+        max-width: 900px;
+        width: 90%;
+        border-radius: 20px;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        animation: fadeIn 1s ease-in-out;
+      }
+
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+          transform: scale(0.95);
+        }
+        100% {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+
+      .profile-img {
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 5px solid #007bff;
+        box-shadow: 0 5px 15px rgba(0, 123, 255, 0.4);
+        margin-bottom: 25px;
+        transition: transform 0.3s ease;
+      }
+
+      .profile-img:hover {
+        transform: scale(1.05);
+      }
+
+      h1 {
+        font-size: 36px;
+        font-weight: 600;
+        margin-bottom: 12px;
+        color: #007bff;
+      }
+
+      p.intro {
+        font-size: 18px;
+        margin-bottom: 35px;
+        color: #555;
+        line-height: 1.6;
+      }
+
+      .btn-group {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        flex-wrap: wrap;
+      }
+
+      .btn {
+        padding: 14px 32px;
+        background: linear-gradient(to right, #007bff, #00c6ff);
+        color: white;
+        font-size: 16px;
+        border: none;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+      }
+
+      .btn:hover {
+        background: linear-gradient(to right, #0056b3, #0088cc);
+        transform: translateY(-2px);
+        box-shadow: 0 6px 16px rgba(0, 123, 255, 0.4);
+      }
+
+      footer {
+        margin-top: 45px;
+        font-size: 14px;
+        color: #999;
+      }
+
+      @media (max-width: 600px) {
+        h1 {
+          font-size: 28px;
+        }
+
+        .btn {
+          width: 100%;
+        }
+
+        .btn-group {
+          flex-direction: column;
+          gap: 15px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Hello, I'm Onkar Bevinakatti</h1>
+      <p class="intro">
+        I'm a passionate Web Developer and UI/UX Designer with a love for clean
+        code and intuitive user interfaces. I specialize in building modern,
+        responsive websites that provide great user experiences. Feel free to
+        explore my resume or biodata below.
+      </p>
+      
+
+      <div class="btn-group">
+        <a href="resume.html" class="btn">📄 View Resume</a>
+        <a href="biodata.html" class="btn">👤 View Biodata</a>
+      </div>
+
+      <footer>&copy; 2025 Onkar Bevinakatti. All rights reserved.</footer>
+    </div>
+  </body>
+</html>
